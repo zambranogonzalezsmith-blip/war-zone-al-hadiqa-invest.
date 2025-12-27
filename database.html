@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos - WAR ZONE AL-HADIQA</title>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: white; padding: 20px; }
+        .secure-box { text-align: center; margin-top: 100px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        th { background: #f3ae1a; color: black; }
+        .status-active { color: #28a745; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div id="login-section" class="secure-box">
+        <h1>Base de Datos Privada</h1>
+        <input type="password" id="db-pass" placeholder="Clave de Acceso" style="padding: 10px;">
+        <button onclick="checkPass()" style="padding: 10px; background: #f3ae1a; border: none; cursor: pointer;">Entrar</button>
+    </div>
+
+    <div id="db-content" style="display: none;">
+        <h1>Registro de Usuarios y Tickets</h1>
+        <p>Control de saldos actuales de Combat Tickets 🎫</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>UID Jugador</th>
+                    <th>Tickets Totales</th>
+                    <th>Última Actividad</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>UID-EJEMPLO-777</td>
+                    <td>3 Tickets</td>
+                    <td>27/12/2025</td>
+                    <td class="status-active">Al día</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="margin-top: 20px; font-size: 0.8em; color: #888;">* Edita este archivo en GitHub para agregar nuevos usuarios.</p>
+    </div>
+
+    <script>
+        function checkPass() {
+            const pass = document.getElementById('db-pass').value;
+            if (pass === "SCARFACE") { // Usa tu misma clave
+                document.getElementById('login-section').style.display = 'none';
+                document.getElementById('db-content').style.display = 'block';
+            } else {
+                alert("Acceso denegado");
+            }
+        }
+    </script>
+</body>
+</html>
