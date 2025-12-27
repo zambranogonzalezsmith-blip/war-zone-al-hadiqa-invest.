@@ -14,27 +14,42 @@
         .btn-view { background: #007bff; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
     </style>
 </head>
-<body>
-    <h1>Panel de Control de Pagos</h1>
-    <p>Revisa y aprueba los reportes de los jugadores aquí.</p>
+    <body>
+    <div id="login-section" style="text-align: center; margin-top: 100px;">
+        <h1>Acceso Administrativo</h1>
+        <input type="password" id="admin-pass" placeholder="Introduce la clave" style="padding: 10px; border-radius: 5px;">
+        <button onclick="checkPass()" style="padding: 10px 20px; background: #f3ae1a; border: none; font-weight: bold; cursor: pointer;">Entrar</button>
+    </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>UID Jugador</th>
-                <th>Transacción</th>
-                <th>Comprobante</th>
-                <th>Acción</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>UID-EXAMPLE-123</td>
-                <td>BIN-987654321</td>
-                <td><button class="btn-view" onclick="alert('Abriendo imagen...')">Ver Captura</button></td>
-                <td><button class="btn-check" onclick="alert('Tokens asignados al UID-EXAMPLE-123')">Aprobar Tokens</button></td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html>
+    <div id="admin-content" style="display: none;">
+        <h1>Panel de Control de Pagos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>UID Jugador</th>
+                    <th>Transacción</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>UID-JUGADOR-EJEMPLO</td>
+                    <td>PAGO-MOBILE-001</td>
+                    <td><button onclick="alert('Tokens aprobados')">Aprobar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function checkPass() {
+            const pass = document.getElementById('admin-pass').value;
+            if (pass === "TU_CLAVE_AQUI") { // Cambia TU_CLAVE_AQUI por tu contraseña real
+                document.getElementById('login-section').style.display = 'none';
+                document.getElementById('admin-content').style.display = 'block';
+            } else {
+                alert("Clave incorrecta");
+            }
+        }
+    </script>
+    </body>
