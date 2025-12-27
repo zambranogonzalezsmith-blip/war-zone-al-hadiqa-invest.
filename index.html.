@@ -22,12 +22,6 @@
     </div>
     <p>Plataforma Oficial de Torneos CODM</p>
 
-    <div class="card">
-        <h2>Torneo Battle Royale</h2>
-        <p>Premio: Pool Acumulado</p>
-        <p><strong>Costo: 50 Tokens</strong></p>
-        <button onclick="alert('Inscripción iniciada. Asegúrate de tener saldo.')">Inscribirse</button>
-    </div>
 
     <hr>
 
