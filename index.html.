@@ -15,6 +15,11 @@
 </head>
 <body>
     <h1>WAR ZONE AL-HADIQA INVEST</h1>
+<div style="margin-bottom: 20px;">
+        <a href="rules.html" style="color: #f3ae1a; text-decoration: none; border: 1px solid #f3ae1a; padding: 5px 15px; border-radius: 20px; font-size: 0.9em;">
+            📜 Leer Reglamento
+        </a>
+    </div>
     <p>Plataforma Oficial de Torneos CODM</p>
 
     <div class="card">
