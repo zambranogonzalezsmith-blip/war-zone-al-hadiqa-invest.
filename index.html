@@ -48,16 +48,18 @@
     </div>
 
     <hr>
-
-    <div class="card" style="background: #1a1a1a; padding: 25px; border: 2px solid #f3ae1a; border-radius: 15px; margin-top: 20px;">
-    <h2 style="color: #f3ae1a; text-transform: uppercase;">Registro de Combate</h2>
-    <p style="color: #eee;">Completa tus datos para validar tu participación.</p>
+<div class="card" style="background: #1a1a1a; padding: 25px; border: 2px solid #f3ae1a; border-radius: 15px; margin-bottom: 20px;">
+    <h2 style="color: #f3ae1a; text-transform: uppercase;">Nueva Orden de Ticket</h2>
+    <p style="color: #eee;">Estado: <span style="color: #f3ae1a; font-weight: bold;">PENDIENTE DE VALIDACIÓN</span></p>
     
     <form action="https://formspree.io/f/2901644177928354974" method="POST" style="display: flex; flex-direction: column; gap: 15px; text-align: left;">
         
+        <input type="hidden" name="_subject" value="NUEVA ORDEN PENDIENTE - War Zone">
+        <input type="hidden" name="_cc" value="soportecodminfo@gmail.com">
+
         <div>
             <label style="color: #f3ae1a; display: block; margin-bottom: 5px;">Usuario CODM:</label>
-            <input type="text" name="Username" placeholder="Ej: Ghost_Sgt" required style="width: 100%; padding: 10px; background: #2a2a2a; border: 1px solid #444; color: white; border-radius: 5px;">
+            <input type="text" name="Jugador" placeholder="Ej: Ghost_Sgt" required style="width: 100%; padding: 10px; background: #2a2a2a; border: 1px solid #444; color: white; border-radius: 5px;">
         </div>
 
         <div>
@@ -66,20 +68,30 @@
         </div>
 
         <div>
-            <label style="color: #f3ae1a; display: block; margin-bottom: 5px;">Correo Electrónico:</label>
-            <input type="email" name="email" placeholder="usuario@correo.com" required style="width: 100%; padding: 10px; background: #2a2a2a; border: 1px solid #444; color: white; border-radius: 5px;">
+            <label style="color: #f3ae1a; display: block; margin-bottom: 5px;">Correo de Contacto:</label>
+            <input type="email" name="email" placeholder="Para enviarte el ID de Sala" required style="width: 100%; padding: 10px; background: #2a2a2a; border: 1px solid #444; color: white; border-radius: 5px;">
         </div>
 
         <div>
-            <label style="color: #f3ae1a; display: block; margin-bottom: 5px;">Contraseña para tu Perfil:</label>
-            <input type="password" name="Password" placeholder="Crea una clave" required style="width: 100%; padding: 10px; background: #2a2a2a; border: 1px solid #444; color: white; border-radius: 5px;">
+            <label style="color: #f3ae1a; display: block; margin-bottom: 5px;">Cantidad de Tickets:</label>
+            <select name="Cantidad_Tickets" style="width: 100%; padding: 10px; background: #2a2a2a; border: 1px solid #444; color: white; border-radius: 5px;">
+                <option value="1">1 Ticket ($1.60)</option>
+                <option value="5">5 Tickets ($8.00)</option>
+                <option value="10">10 Tickets ($16.00)</option>
+            </select>
+        </div>
+
+        <div>
+            <label style="color: #f3ae1a; display: block; margin-bottom: 5px;">Comprobante de Pago:</label>
+            <input type="file" name="Comprobante" accept="image/*" style="color: #bbb; font-size: 0.9em;">
+            <p style="color: #888; font-size: 0.8em; margin-top: 5px;">Opcional: Adjunta captura si ya realizaste el pago.</p>
         </div>
 
         <button type="submit" style="background: #f3ae1a; color: black; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 1.1em; margin-top: 10px;">
-            ENVIAR REGISTRO OFICIAL
+            SOLICITAR ORDEN PENDIENTE
         </button>
     </form>
-    </div>
+</div>
         </form>
 <div style="margin-top: 40px; padding: 20px; background: #1a1a1a; border: 1px solid #f3ae1a; border-radius: 10px; display: inline-block; width: 90%; max-width: 400px;">
         <h3 style="color: #f3ae1a; margin-top: 0;">¿Necesitas ayuda?</h3>
