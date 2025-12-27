@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Admin - WAR ZONE AL-HADIQA</title>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: white; padding: 20px; }
+        h1 { color: #f3ae1a; border-bottom: 2px solid #f3ae1a; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #1e1e1e; }
+        th, td { border: 1px solid #333; padding: 12px; text-align: left; }
+        th { background: #252525; color: #f3ae1a; }
+        .btn-check { background: #28a745; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+        .btn-view { background: #007bff; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Panel de Control de Pagos</h1>
+    <p>Revisa y aprueba los reportes de los jugadores aquí.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>UID Jugador</th>
+                <th>Transacción</th>
+                <th>Comprobante</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>UID-EXAMPLE-123</td>
+                <td>BIN-987654321</td>
+                <td><button class="btn-view" onclick="alert('Abriendo imagen...')">Ver Captura</button></td>
+                <td><button class="btn-check" onclick="alert('Tokens asignados al UID-EXAMPLE-123')">Aprobar Tokens</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
