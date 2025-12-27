@@ -33,7 +33,37 @@
 
     <div class="card">
         <h2>Reportar Pago P2P</h2>
-        <p>Envía tu pago y adjunta la captura para recibir tus Tokens.</p>
+        <p>Envía tu pago y adjunta la captura para recibir tus combat ticket.</p>
+<div class="card">
+        <h2>Adquirir Combat Tickets 🎫</h2>
+        <img src="ticket.jpg" alt="Combat Ticket" style="width: 100%; max-width: 200px; border-radius: 10px; margin-bottom: 15px;">
+        <p style="font-size: 1.2em; color: #f3ae1a; font-weight: bold;">1 Combat Ticket = $1.60</p>
+        <p>Válido para entrada a torneos oficiales.</p>
+        
+        <table style="width: 100%; margin-top: 10px; border-top: 1px solid #333;">
+            <tr>
+                <td>1 Ticket</td>
+                <td>$1.60</td>
+            </tr>
+            <tr>
+                <td>5 Tickets</td>
+                <td>$8.00</td>
+            </tr>
+            <tr>
+                <td>10 Tickets</td>
+                <td>$16.00</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="card">
+        <h2>Próximo Torneo: Battle Royale</h2>
+        <p>Premio: Pool Acumulado</p>
+        <p><strong>Costo: 1 Combat Ticket</strong></p>
+        <button onclick="alert('Inscripción iniciada. Debes tener 1 Ticket en tu cuenta.')">Inscribirse ahora</button>
+    </div>
         <input type="text" placeholder="Tu UID de CODM">
         <input type="text" placeholder="ID de Transacción (Binance/Pago Móvil)">
         <p style="font-size: 0.8em;">Adjuntar comprobante:</p>
