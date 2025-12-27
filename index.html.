@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAR ZONE AL-HADIQA INVEST</title>
+    <style>
+        body { font-family: sans-serif; background: #1a1a1a; color: white; text-align: center; padding: 50px; }
+        .token-card { border: 1px solid #444; padding: 20px; border-radius: 10px; background: #2a2a2a; display: inline-block; }
+        button { background: #f3ae1a; border: none; padding: 10px 20px; font-weight: bold; cursor: pointer; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>WAR ZONE AL-HADIQA INVEST</h1>
+    <p>Plataforma de Torneos CODM</p>
+    
+    <div class="token-card">
+        <h3>Próximo Torneo: Battle Royale</h3>
+        <p>Costo: 50 Tokens</p>
+        <button>Inscribirse ahora</button>
+    </div>
+</body>
+</html>
