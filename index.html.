@@ -59,10 +59,16 @@
     <hr>
 
     <div class="card">
-        <h2>Próximo Torneo: Battle Royale</h2>
-        <p>Premio: Pool Acumulado</p>
-        <p><strong>Costo: 1 Combat Ticket</strong></p>
-        <button onclick="alert('Inscripción iniciada. Debes tener 1 Ticket en tu cuenta.')">Inscribirse ahora</button>
+        <h2>Inscripción de Torneo</h2>
+        <p>Costo: <strong>1 Combat Ticket</strong></p>
+        <form action="mailto:soporteCODMINFO@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="UID_Jugador" placeholder="Tu UID de CODM" required style="margin-bottom: 10px; width: 80%; padding: 8px;">
+            <br>
+            <input type="hidden" name="Accion" value="Inscripcion_Torneo">
+            <button type="submit" style="background: #f3ae1a; color: black; padding: 10px 20px; border: none; font-weight: bold; cursor: pointer;">
+                🎟️ Usar 1 Ticket para Entrar
+            </button>
+        </form>
     </div>
         <input type="text" placeholder="Tu UID de CODM">
         <input type="text" placeholder="ID de Transacción (Binance/Pago Móvil)">
