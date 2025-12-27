@@ -5,19 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WAR ZONE AL-HADIQA INVEST</title>
     <style>
-        body { font-family: sans-serif; background: #1a1a1a; color: white; text-align: center; padding: 50px; }
-        .token-card { border: 1px solid #444; padding: 20px; border-radius: 10px; background: #2a2a2a; display: inline-block; }
-        button { background: #f3ae1a; border: none; padding: 10px 20px; font-weight: bold; cursor: pointer; border-radius: 5px; }
+        body { font-family: 'Arial', sans-serif; background: #0f0f0f; color: #e0e0e0; text-align: center; padding: 20px; }
+        .card { background: #1a1a1a; border: 1px solid #333; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); }
+        h1 { color: #f3ae1a; text-transform: uppercase; }
+        button { background: #f3ae1a; color: black; border: none; padding: 12px 25px; font-weight: bold; border-radius: 6px; cursor: pointer; width: 100%; max-width: 300px; }
+        input { width: 90%; padding: 12px; margin: 10px 0; background: #2a2a2a; border: 1px solid #444; color: white; border-radius: 5px; }
+        hr { border: 0; border-top: 1px solid #333; margin: 30px 0; }
     </style>
 </head>
 <body>
     <h1>WAR ZONE AL-HADIQA INVEST</h1>
-    <p>Plataforma de Torneos CODM</p>
-    
-    <div class="token-card">
-        <h3>Próximo Torneo: Battle Royale</h3>
-        <p>Costo: 50 Tokens</p>
-        <button>Inscribirse ahora</button>
+    <p>Plataforma Oficial de Torneos CODM</p>
+
+    <div class="card">
+        <h2>Torneo Battle Royale</h2>
+        <p>Premio: Pool Acumulado</p>
+        <p><strong>Costo: 50 Tokens</strong></p>
+        <button onclick="alert('Inscripción iniciada. Asegúrate de tener saldo.')">Inscribirse</button>
+    </div>
+
+    <hr>
+
+    <div class="card">
+        <h2>Reportar Pago P2P</h2>
+        <p>Envía tu pago y adjunta la captura para recibir tus Tokens.</p>
+        <input type="text" placeholder="Tu UID de CODM">
+        <input type="text" placeholder="ID de Transacción (Binance/Pago Móvil)">
+        <p style="font-size: 0.8em;">Adjuntar comprobante:</p>
+        <input type="file" accept="image/*">
+        <button style="background: #28a745; color: white;" onclick="alert('Comprobante enviado. El admin lo revisará pronto.')">Enviar Comprobante</button>
     </div>
 </body>
 </html>
