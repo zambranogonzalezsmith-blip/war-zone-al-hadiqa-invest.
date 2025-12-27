@@ -40,5 +40,12 @@
         <input type="file" accept="image/*">
         <button style="background: #28a745; color: white;" onclick="alert('Comprobante enviado. El admin lo revisará pronto.')">Enviar Comprobante</button>
     </div>
+<div style="margin-top: 40px; padding: 20px; background: #1a1a1a; border: 1px solid #f3ae1a; border-radius: 10px; display: inline-block; width: 90%; max-width: 400px;">
+        <h3 style="color: #f3ae1a; margin-top: 0;">¿Necesitas ayuda?</h3>
+        <p style="font-size: 0.9em; color: #bbb;">Para dudas sobre tokens, errores en pagos o soporte técnico, contáctanos:</p>
+        <a href="mailto:soporteCODMINFO@gmail.com" style="color: #f3ae1a; text-decoration: none; font-weight: bold; font-size: 1.1em; display: block; margin-top: 10px;">
+            ✉️ soporteCODMINFO@gmail.com
+        </a>
+    </div>
 </body>
 </html>
